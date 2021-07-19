@@ -1,0 +1,34 @@
+h1{
+    text-align: center;
+    font-size: 45px;
+}
+h2{
+    color: rgb(105, 240, 195);
+}
+
+div[class^="menu-"]{
+    background-color: rgb(10, 208, 243);
+    height: 40px;
+   
+}
+.menu {
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    color: rgb(26, 26, 26);
+}
+.menu .menu-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+     
+}
+.menu .menu-item a, main article a {
+    text-decoration: none;
+    color: #000;
+}
+.menu .menu-item a:hover, main article a:hover {
+    text-decoration: underline;
+    color: rgb(5, 156, 124);
+}

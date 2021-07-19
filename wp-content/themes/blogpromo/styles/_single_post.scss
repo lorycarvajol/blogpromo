@@ -1,0 +1,11 @@
+.menu .menu-item a, main article a {
+    text-decoration: none;
+    color: rgb(233, 230, 230);
+}
+.menu .menu-item a:hover, main article a:hover {
+    text-decoration: underline;
+    color: rgb(5, 156, 124);
+}
+main{
+    background: rgb(190, 189, 189);
+}

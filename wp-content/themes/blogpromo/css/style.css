@@ -1,0 +1,96 @@
+/*
+Theme name: Anathème
+Author: Pierre et Lory
+Description: on savait pas quoi faire alors.......
+Theme URI :
+Version: 2.1
+
+*/
+h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+h2 {
+  color: #69f0c3;
+}
+
+div[class^="menu-"] {
+  background-color: #0ad0f3;
+  height: 40px;
+}
+
+.menu {
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1000px;
+  color: #1a1a1a;
+}
+
+.menu .menu-item {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu .menu-item a, main article a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu .menu-item a:hover, main article a:hover {
+  text-decoration: underline;
+  color: #059c7c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #dbdbdb;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 50px;
+  background: #000;
+}
+
+main#Accueil {
+  background: #414141;
+}
+
+h1 {
+  margin: 20px auto;
+  font-size: 45px;
+}
+
+.menu .menu-item a, main article a {
+  text-decoration: none;
+  color: #e9e6e6;
+}
+
+.menu .menu-item a:hover, main article a:hover {
+  text-decoration: underline;
+  color: #059c7c;
+}
+
+main {
+  background: #bebdbd;
+}
+/*# sourceMappingURL=style.css.map */
