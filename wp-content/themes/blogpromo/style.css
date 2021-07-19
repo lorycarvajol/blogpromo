@@ -1,0 +1,70 @@
+/*
+Theme name: Anathème
+Author: Pierre et Lory
+Description: on savait pas quoi faire alors.......
+Theme URI :
+Version: 2.1
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(219, 219, 219);
+    
+}
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 50px;
+    background: #000;
+}
+main#Accueil{
+    background: rgb(65, 65, 65);
+}
+article{
+    color: rgb(2, 86, 92);
+    width: 80%;
+    margin: 20px ;
+    padding: 20px 20px ;
+    background: rgb(185, 184, 184);
+}
+h1{
+    margin: 20px auto;
+    font-size: 45px;
+}
+h2{
+    color: rgb(105, 240, 195);
+}
+
+div[class^="menu-"]{
+    background-color: rgb(238, 226, 120);
+    height: 40px;
+   
+}
+.menu, footer p {
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    color: rgb(26, 26, 26);
+}
+.menu .menu-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+     
+}
+.menu .menu-item a, main article a {
+    text-decoration: none;
+    color: #000;
+}
+.menu .menu-item a:hover, main article a:hover {
+    text-decoration: underline;
+    color: rgb(5, 156, 124);
+}
