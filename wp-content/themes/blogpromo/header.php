@@ -8,5 +8,16 @@
     <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
 </head>
 <body>
-<h1><?php bloginfo('name'); ?></h1>
-    <?php wp_nav_menu (); ?>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Accueil</a>
+            </li>
+            <li>
+                <a href="">La Promo</a>
+            </li>
+            <li>
+                <a href="">Les Technos</a>
+            </li>
+        </ul>
+    </nav>
