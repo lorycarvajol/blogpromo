@@ -7,7 +7,7 @@ body {
     
 }
 main{
-    
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,9 +16,23 @@ main{
     background: #000;
 }
 main#Accueil{
-    background: rgb(65, 65, 65);
+    background: rgb(53, 52, 52);
+}
+article{
+    margin: 5px;
+    padding: 50px;
+    background: rgb(129, 129, 129);
+    
 }
 h1{
     margin: 20px auto;
     font-size: 45px;
+}
+h2{
+    font-size: 30px;
+    margin: 10px 50px;
+}
+p{
+    font-size: 25px;
+    margin: 10px 20px;
 }

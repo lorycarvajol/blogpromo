@@ -7,8 +7,30 @@ h2{
 }
 
 div[class^="menu-"]{
-    background-color: rgb(10, 208, 243);
+    
     height: 40px;
+    margin:10px auto;
+    
+    ul{
+        margin:10px auto;
+        
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li{
+        margin: 10px auto;
+        
+        
+        a{
+            border-radius: 5px;
+            border: 2px solid grey;
+            padding: 10px;
+            background: rgb(1, 127, 136);
+            color: #000;
+            font-size: 30px;
+        }
+    }
+    }
    
 }
 .menu {
@@ -30,5 +52,8 @@ div[class^="menu-"]{
 }
 .menu .menu-item a:hover, main article a:hover {
     text-decoration: underline;
-    color: rgb(5, 156, 124);
+    color: rgb(0, 0, 0);
+}
+.menu .menu-item ul a{
+    background: #000;
 }

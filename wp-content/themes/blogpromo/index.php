@@ -1,15 +1,15 @@
 <?php get_header(); ?>
 <main>
-    <h1><?php bloginfo(''); ?></h1>
+   
     <?php while (have_posts()) :  the_post(); ?>
         <article>
             <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail('medium'); ?>
-                <h2><?php the_title(); ?></h2>
+                <p><?php the_post_thumbnail('medium_large'); ?></p>
+                <h2><?php the_title(); ?> - <?php the_author() ?>  </h2>
             </a>
             <?php the_excerpt(); ?>
             <a href="<?php the_permalink(); ?>">
-                Lire
+               <p> Lire</p>
         </article>
     <?php endwhile; ?>
 
