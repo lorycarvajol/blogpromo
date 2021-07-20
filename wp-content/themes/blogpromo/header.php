@@ -8,5 +8,7 @@
     <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
 </head>
 <body>
-<h1><?php bloginfo('name'); ?></h1>
+    <header>
+
     <?php wp_nav_menu (); ?>
+</header>
