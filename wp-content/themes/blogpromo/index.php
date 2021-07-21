@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
    
-    <?php while (have_posts()) :  the_post(); ?>
+<?php while (have_posts()) :  the_post(); ?>
         <article>
             <a href="<?php the_permalink(); ?>">
                 <p><?php the_post_thumbnail('medium_large'); ?></p>
