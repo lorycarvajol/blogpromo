@@ -10,12 +10,6 @@
 </head>
 
 <body>
-    <header>
-<<<<<<< HEAD
-
-    <?php wp_nav_menu (); ?>
-</header>
-=======
+    <header class="header">
         <?php wp_nav_menu(); ?>
     </header>
->>>>>>> 906e9b5e2605174cc075e84207c8782507303f66
