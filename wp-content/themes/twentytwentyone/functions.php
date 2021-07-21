@@ -627,3 +627,61 @@ function twentytwentyone_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+function register_student_post_types()
+{
+
+  // CPT Apprenant
+  $labels = array(
+    'name' => 'Apprenants',
+    'all_items' => 'Tous les apprenants',
+    'view_item' => 'Voir les apprenants',
+    'singular_name' => 'Apprenant',
+    'add_new_item' => 'Ajouter un apprenant',
+    'edit_item' => 'Modifier un apprenant',
+    'menu_name' => 'Apprenant'
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'taxonomies' => array('category', 'post_tag'),
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-admin-users',
+  );
+
+  register_post_type('apprenant', $args);
+}
+add_action('init', 'register_student_post_types'); // Le hook init lance la fonction
+
+function register_presentation_post_types()
+{
+
+  // CPT Presentations
+  $labels = array(
+    'name' => 'Presentation',
+    'all_items' => 'Toutes les presentations', // affiché dans le sous menu
+    'view_item' => 'Voir les presentations',
+    'singular_name' => 'Presentation',
+    'add_new_item' => 'Ajouter une presentation',
+    'edit_item' => 'Modifier une presentation',
+    'menu_name' => 'Presentation'
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'taxonomies' => array('category', 'post_tag'),
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-admin-page',
+  );
+
+  register_post_type('presentation', $args);
+}
+add_action('init', 'register_presentation_post_types'); // Le hook init lance la fonction

@@ -58,7 +58,7 @@ function register_presentation_post_types()
   // CPT Presentations
   $labels = array(
     'name' => 'Presentation',
-    'all_items' => 'Toutes les presentations', // affiché dans le sous menu
+    'all_items' => 'Toutes les presentations',
     'view_item' => 'Voir les presentations',
     'singular_name' => 'Presentation',
     'add_new_item' => 'Ajouter une presentation',

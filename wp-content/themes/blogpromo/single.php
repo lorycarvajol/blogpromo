@@ -5,13 +5,10 @@
         <h2><?php bloginfo(''); ?></h2>
 
         <?php the_post_thumbnail_url('medium'); ?>
-        
-        ?>
 
         <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
     <?php endwhile; ?>
-
 </main>
 
 <?php get_footer(); ?>
