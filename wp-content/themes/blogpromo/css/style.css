@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 header .menu {
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +72,13 @@ body {
   text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.75);
 }
 
-.lastArticles {
+.last-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.last-articles article:nth-child(even) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,28 +86,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.lastArticles h2 {
-  position: relative;
-  margin: 100px;
-  color: white;
-  font-size: 30px;
-}
-
-.lastArticles h2:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  content: ".";
-  color: transparent;
-  background: #845331;
-  height: 2px;
+  width: 500px;
 }
 /*# sourceMappingURL=style.css.map */
