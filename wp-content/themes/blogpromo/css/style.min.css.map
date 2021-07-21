@@ -8,7 +8,8 @@
         "../styles/_footer.scss",
         "../styles/_index.scss",
         "../styles/_single_post.scss",
-        "../styles/_frontpage.scss"
+        "../styles/_frontpage.scss",
+        "../styles/_techno.scss"
     ],
     "names": [],
     "file": "style.min.css"

@@ -1,0 +1,113 @@
+.techno-container{
+    
+    margin-top: 100px ; 
+    width: 100%;
+    height: auto;
+    color: honeydew;
+    .title-tech{
+        margin: 10px 120px;
+        
+    }
+    .bloc-front{
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        
+        width: 90%;
+        height: auto;
+        gap: 15px;
+        .item-bloc-front{
+            width: 100%;
+            display: flex;
+            img{
+                margin-left: 20px;
+            
+            width: 150px;
+            height: 150px;
+            }
+            p{
+            margin-left: 10px;
+            
+            }
+        }
+        
+    }
+    .bloc-back{
+        
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        
+        width: 90%;
+        height: auto;
+        gap: 15px;
+        .item-bloc-back{
+            width: 100%;
+            display: flex;
+            img{
+                margin-left: 20px;
+            
+            width: 150px;
+            height: 150px;
+            }
+            p{
+            margin-left: 10px;
+            
+            }
+        }
+    }
+    .bloc-pao{
+        
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        
+        width: 90%;
+        height: auto;
+        gap: 15px;
+        .item-bloc-pao{
+            width: 100%;
+            display: flex;
+            img{
+                margin-left: 20px;
+            
+            width: 150px;
+            height: 150px;
+            }
+            p{
+            margin-left: 10px;
+            
+            }
+        }
+    }
+    .bloc-vers{
+        
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        
+        width: 90%;
+        height: auto;
+        gap: 15px;
+        .item-bloc-vers{
+            width: 100%;
+            display: flex;
+            img{
+                margin-left: 20px;
+            
+            width: 150px;
+            height: 150px;
+            }
+            p{
+            margin-left: 10px;
+            
+            }
+        }
+    }
+}
