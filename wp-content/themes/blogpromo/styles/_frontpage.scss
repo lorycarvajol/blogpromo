@@ -15,26 +15,14 @@
   }
 }
 
-.lastArticles{
+.last-articles{
+  display: flex;
+  h2{
+    
+  }
+  article:nth-child(even){
     display: flex;
     flex-direction: column;
-    align-items: center;
-    h2{
-        position: relative;
-        margin: 100px;
-        color: white;
-        font-size: $fontSizeTitle;
-    }
-    h2:after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        content: ".";
-        color: transparent;
-        background: $lightBrown;
-        height: 2px;
-      }
+    width: 500px;
+  }
 }
