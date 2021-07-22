@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-
 <div class="techno-container">
 
     <h2 class="title-tech">Les techno front</h2>
@@ -43,7 +41,7 @@
     <h2 class="title-tech">Les techno back</h2>
 
     <div class="bloc-back">
-        
+
         <div class="item-bloc-back">
             <img src="" alt="">
             <p>PHP (officielement, ce sigle est un acronyme récurssif pour PHP Hypertext Preprocessor ) est un language de scripts généraliste et open-source, spécialement conçu pour le développement d'appilcations web. </p>
@@ -71,20 +69,18 @@
             <p>Adobe illustrator est un logiciel de création graphique vectorielle.</p>
         </div>
     </div>
-
+    
     <h2 class="title-tech">Versionning</h2>
     <div class="bloc-vers">
 
-    <div class="item-bloc-vers">
-        <img src="assets/github.svg" alt="">
-        <p>Github est un service d'hébergemnt de référentiel Git.</p>
-    </div>
-    <div class="item-bloc-vers">
-        <img src="" alt="">
-        <p>Git est un logiciel de gestion de version décentralisé.</p>
+        <div class="item-bloc-vers">
+            <img src="assets/github.svg" alt="">
+            <p>Github est un service d'hébergemnt de référentiel Git.</p>
+        </div>
+        <div class="item-bloc-vers">
+            <img src="" alt="">
+            <p>Git est un logiciel de gestion de version décentralisé.</p>
+        </div>
     </div>
 </div>
-</div>
-
-
 <?php get_footer(); ?>
