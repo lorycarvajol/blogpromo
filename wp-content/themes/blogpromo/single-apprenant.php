@@ -3,6 +3,7 @@
     <div class="card">
         <div class="imgbox">
             <img src="<?php echo get_template_directory_uri(); ?>./assets/images/peggy.jpg" width="" height="" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/peggyhot.jfif" width="" height="" alt="" />
         </div>
         <div class="details">
             <div class="content-card">

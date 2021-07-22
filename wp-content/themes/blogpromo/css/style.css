@@ -411,13 +411,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
-  background-color: #0D0C0B;
+  background-image: url(../assets/bureau.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-card .card {
   position: relative;
-  width: 450px;
-  height: 600px;
+  width: 30vw;
+  height: 40vw;
   background-color: #523524;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -443,6 +446,8 @@ body {
   border-radius: 5%;
   -webkit-transition: 1s;
   transition: 1s;
+  -webkit-box-shadow: 10px 20px 40px rgba(247, 246, 246, 0.25);
+          box-shadow: 10px 20px 40px rgba(247, 246, 246, 0.25);
 }
 
 .page-card .card .imgbox img {
@@ -456,6 +461,11 @@ body {
      object-fit: cover;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+.page-card .card .imgbox img:nth-child(2) {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .page-card .card .details {
@@ -483,9 +493,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
