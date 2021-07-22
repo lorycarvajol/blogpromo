@@ -1,4 +1,13 @@
-<?php get_header();
+<?php get_header();?>
+
+<div class="present-container">
+
+<h1 class="title-present">Nos présentations</h1>
+
+
+
+<div class="bloc-present">
+    <?php
 $args = array(
     'post_type' => 'presentation',
     'orderby' => 'date',
@@ -10,5 +19,15 @@ while ($wp_query->have_posts()) : the_post() ?>
     <p> <?php the_content(); ?> </p>
     <a href="<?php the_permalink(); ?>"></a>
 <?php endwhile;
-wp_reset_query();
-get_footer(); ?>
+wp_reset_query();?>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+<?php get_footer(); ?>

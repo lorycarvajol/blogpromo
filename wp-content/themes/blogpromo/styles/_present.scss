@@ -1,0 +1,26 @@
+.present-container{
+    
+    margin-top: 100px ; 
+    width: 100%;
+    height: 800px;
+    color: honeydew;
+    .title-present{
+        margin: 10px 120px;
+        
+        
+            position: relative;
+           }
+          
+           .title-present::before {
+            content: "";
+            position: absolute;
+            left: 5.5%;
+            bottom: 0px;
+            width: 250px;
+            height: 14px;
+            transform: skew(-12deg) translateX(-50%);
+            background: rgba(238, 131, 109, 0.5);
+            z-index: -1;
+         
+    }
+}

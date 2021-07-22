@@ -7,6 +7,21 @@
     .title-tech{
         margin: 10px 120px;
         
+        
+            position: relative;
+           }
+          
+           .title-tech::before {
+            content: "";
+            position: absolute;
+            left: 5.5%;
+            bottom: 0px;
+            width: 190px;
+            height: 14px;
+            transform: skew(-12deg) translateX(-50%);
+            background: rgba(238, 131, 109, 0.5);
+            z-index: -1;
+         
     }
     .bloc-front{
         margin: 30px auto;
@@ -20,14 +35,17 @@
             width: 100%;
             display: flex;
             img{
+                width: 15%;
+                background-image: src;
                 margin-left: 20px;
             
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             }
             p{
-            margin-left: 10px;
-            
+                width: 85%;
+            margin-left: 20px;
+            font-size: 20px;
             }
         }
         
@@ -47,13 +65,16 @@
             width: 100%;
             display: flex;
             img{
+                width: 15%;
                 margin-left: 20px;
             
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             }
             p{
-            margin-left: 10px;
+                width: 85%;
+            margin-left: 20px;
+            font-size: 20px;
             
             }
         }
@@ -73,13 +94,16 @@
             width: 100%;
             display: flex;
             img{
+                width: 15%;
                 margin-left: 20px;
             
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             }
             p{
-            margin-left: 10px;
+                width: 85%;
+                margin-left: 20px;
+                font-size: 20px;
             
             }
         }
@@ -99,13 +123,16 @@
             width: 100%;
             display: flex;
             img{
+                width: 15%;
                 margin-left: 20px;
             
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             }
             p{
-            margin-left: 10px;
+                width: 85%;
+                margin-left: 20px;
+                font-size: 20px;
             
             }
         }

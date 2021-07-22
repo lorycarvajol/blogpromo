@@ -9,7 +9,9 @@
         "../styles/_index.scss",
         "../styles/_single_post.scss",
         "../styles/_frontpage.scss",
-        "../styles/_techno.scss"
+        "../styles/_techno.scss",
+        "../styles/_present.scss",
+        "../styles/_single-apprenant.scss"
     ],
     "names": [],
     "file": "style.css"
