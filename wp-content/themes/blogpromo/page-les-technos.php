@@ -72,7 +72,6 @@
     
     <h2 class="title-tech">Versionning</h2>
     <div class="bloc-vers">
-
     <div class="item-bloc-vers">
     <img src="<?php echo get_template_directory_uri(); ?>./assets/images/github.png" width="" height="" alt="" />
         <p>Github est un service d'hébergemnt de référentiel Git.</p>
