@@ -17,7 +17,7 @@
     transform-style:preserve-3d ;
     transform: perspective(1000px);
     box-shadow: 10px 20px 40px rgba(247, 246, 246, 0.25);
-    border-radius: 5%;
+    border-radius: 10px;
     transition: 1s;
     .imgbox{
       position: relative;
@@ -27,13 +27,15 @@
       transform-origin: left;
       transform-style: preserve-3d;
       background: #000;
-      border-radius: 5%;
+      border-radius: 10px;
+      
       transition: 1s;
       box-shadow: 10px 20px 40px rgba(247, 246, 246, 0.25);
       filter: grayscale(70%);
       img{
         filter: grayscale(70%);
-        border-radius: 5%;
+        
+        border-radius: 10px;
         position: absolute;
         top: 0;
         left: 0;
@@ -44,6 +46,8 @@
       }
       img:nth-child(2){
         transform:rotateY(180deg) ;
+        
+        border-radius: 10px;
       }
     }
     .details{
