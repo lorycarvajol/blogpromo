@@ -79,7 +79,6 @@
     <div class="item-bloc-vers">
     <img src="<?php echo get_template_directory_uri(); ?>./assets/images/git.png" width="" height="" alt="" />
         <p>Git est un logiciel de gestion de version décentralisé.</p>
-
     </div>
 </div>
 <?php get_footer(); ?>
