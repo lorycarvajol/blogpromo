@@ -7,7 +7,7 @@
             
             <input type="image" src="<?php echo get_template_directory_uri(); ?>./assets/loupe.png" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button') ?>" />
                 
-                <input type="search" class="search-field" placeholder="" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
+                <input type="search" class="search-field" placeholder="Rechercher un article..." value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
             
            
         </form>

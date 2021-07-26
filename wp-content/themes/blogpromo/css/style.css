@@ -46,11 +46,13 @@
   margin: 0 auto;
   border: 2px solid yellow;
   background: #aaaaaa;
-  width: 20%;
+  width: 30%;
   height: 60px;
+  border-radius: 5px;
 }
 
 .page-article .article-search form input {
+  border-radius: 5px;
   width: 100%;
   background-color: transparent;
   font-size: 25px;
