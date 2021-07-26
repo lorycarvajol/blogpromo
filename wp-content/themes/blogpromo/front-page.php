@@ -4,7 +4,6 @@
         <h1><?php bloginfo('name'); ?></h1>
     </section>
     <section class="section-articles">
-        <h2>Les derniers articles</h2>
         <div class="container-articles">
             <?php while (have_posts()) : the_post(); ?>
                 <article class="accueil-articles">
@@ -34,8 +33,8 @@
                 if ($posts) {
                     $i = 1;
                     foreach ($posts as $post) { ?>
-                        <div id="<?= $i;
-                                    $i++; ?>">
+                        <div class="reviewdiv" id="<?= $i;
+                                                    $i++; ?>">
                             <h3><?php the_title(); ?></h2>
                                 <p><?php echo get_fields()['avis']; ?></p>
                                 <div class="image">
@@ -143,28 +142,12 @@
                                     }
                                     ?>
                                 </div>
-                        </div><?php
-                            }
-                        }
-                                ?>
+                        </div><?php }
+                        } ?>
                 <button id="after"> > </button>
     </section>
 </main>
 <?php get_footer(); ?>
-
 <script>
-    const afterBtn = document.getElementById('after');
-    const beforeBtn = document.getElementById('before');
-    let i = 1;
-
-    while(i <= 3){
-        const posts = document.getElementById(i);
-        posts.style.display = "flex";
-        i++;
-    }
-    afterBtn.addEventListener('click', function(){
-        const click = 2;
-        click++
-    })
-
+    
 </script>

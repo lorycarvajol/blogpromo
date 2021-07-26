@@ -21,8 +21,6 @@ function enregistre_mon_menu()
 }
 add_action('init', 'enregistre_mon_menu');
 
-
-
 function register_student_post_types()
 {
 
@@ -52,6 +50,34 @@ function register_student_post_types()
 }
 add_action('init', 'register_student_post_types'); // Le hook init lance la fonction
 
+function register_presentation_post_types()
+{
+
+  // CPT Presentation
+  $labels = array(
+    'name' => 'Presentations',
+    'all_items' => 'Toutes les presentations',
+    'view_item' => 'Voir les presentations',
+    'singular_name' => 'Presentation',
+    'add_new' => 'Ajouter une presentation',
+    'edit_item' => 'Modifier une presentation',
+    'menu_name' => 'Presentation'
+  );
+
+  $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'show_in_rest' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'taxonomies' => array('category', 'post_tag'),
+    'menu_position' => 5,
+    'menu_icon' => 'dashicons-admin-page',
+  );
+
+  register_post_type('presentation', $args);
+}
+add_action('init', 'register_presentation_post_types'); // Le hook init lance la fonction
 
 // Fonction limit excerpt
 function custom_excerpt_length($length)
