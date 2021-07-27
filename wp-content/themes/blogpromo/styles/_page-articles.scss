@@ -28,6 +28,8 @@
                     border-radius: 5px;
                 
                 input{
+                    margin: 0 20px;
+                    border: none;
                     border-radius: 5px;
                    width: 100%;
                    background-color: transparent;
@@ -35,6 +37,7 @@
                    color: $brown;
             }
             .search-submit{
+                
                 position: relative;
                 background-image: url(../assets/loupe.png);
                 width: 60px;

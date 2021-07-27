@@ -1,4 +1,5 @@
 <?php
+add_theme_support('html5', array('search-form'));
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 add_theme_support('title-tag');
@@ -85,3 +86,8 @@ function custom_excerpt_length($length)
 return 10;
 }
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
+ //fonction search form
+
+ /**
+ * Add HTML5 theme support.
+ */

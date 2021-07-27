@@ -52,6 +52,8 @@
 }
 
 .page-article .article-search form input {
+  margin: 0 20px;
+  border: none;
   border-radius: 5px;
   width: 100%;
   background-color: transparent;
@@ -117,6 +119,65 @@ footer p {
 
 body {
   background-color: #0D0C0B;
+}
+
+.singpost-container {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.singpost-container H1 {
+  text-align: center;
+  color: beige;
+}
+
+.singpost-container .post__meta {
+  margin: 15px auto;
+  width: 90%;
+  height: auto;
+  color: #f1cd96;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.singpost-container .post__meta .blocdesc {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.singpost-container .post__meta .blocdesc ul {
+  margin-left: 5px;
+  list-style: none;
+}
+
+.singpost-container .blocPost {
+  margin: 10px auto;
+  width: 70%;
+  height: 100%;
+  background: #8d8d8d;
+  border: 2px solid yellow;
+  position: relative;
+  padding: 10px;
+}
+
+.singpost-container p {
+  margin: 15px 25px 15px 15px;
+  float: left;
+}
+
+.singpost-container .post__content {
+  margin: 15px 15px 15px 25px;
 }
 
 .banner {
@@ -247,17 +308,24 @@ body {
 }
 
 .review {
+  width: 100%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
   overflow: hidden;
 }
 
-.review div {
+.review button {
+  font-size: 35px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.review .reviewdiv {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -268,7 +336,7 @@ body {
           align-items: center;
 }
 
-.review div .image {
+.review .reviewdiv .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,8 +346,14 @@ body {
           flex-direction: row;
 }
 
-.review div .image img {
+.review .reviewdiv .image img {
   width: 20px;
+}
+
+.review :nth-child(3n+3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .techno-container {
@@ -533,11 +607,25 @@ body {
 }
 
 .bloc-present .present-item .present-content a .presentBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #818080;
   width: 25%;
   height: 55px;
   position: absolute;
   border: 3px solid #e4ba00;
+}
+
+.bloc-present .present-item .present-content a .presentBtn img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .bloc-present .present-item::after {
@@ -671,7 +759,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(153, 152, 152, 0.199);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -687,14 +774,12 @@ body {
 
 .page-card .card .details .content-card .descri-card {
   margin-top: 20px;
-  background: #a1a1a1;
   width: 100%;
   height: 50%;
 }
 
 .page-card .card .details .content-card .proj-card {
   width: 100%;
-  background: rgba(179, 175, 175, 0.212);
   height: 30%;
 }
 
@@ -706,7 +791,6 @@ body {
 }
 
 .page-card .card .details .content-card .proj-card .projet p {
-  background: #e44c4c;
   width: 30%;
   height: 90%;
 }

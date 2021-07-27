@@ -63,12 +63,17 @@
                     justify-content: center;
                     margin-bottom: 0;
                     .presentBtn{
-                    
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;                      
                         background: rgb(129, 128, 128);
                         width: 25%;
                         height: 55px;
                         position: absolute;
                         border: 3px solid #e4ba00;
+                        img{
+                            transform: rotate(90deg);
+                        }
                     }
                 }
             }        
