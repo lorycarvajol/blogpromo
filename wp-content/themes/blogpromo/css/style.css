@@ -261,6 +261,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 800px;
+  border-top: 1px solid #c5c5c5;
+  border-left: 1px solid #c5c5c5;
 }
 
 .section-articles .container-articles .article > img {
@@ -734,7 +736,7 @@ body {
   top: 0;
   left: 0;
   width: 90%;
-  height: 90%;
+  height: 100%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,24 +777,59 @@ body {
 .page-card .card .details .content-card .descri-card {
   margin-top: 20px;
   width: 100%;
-  height: 50%;
+  height: 25%;
+  overflow: hidden;
 }
 
 .page-card .card .details .content-card .proj-card {
+  margin-top: 5px;
   width: 100%;
-  height: 30%;
+  height: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .page-card .card .details .content-card .proj-card .projet {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
+  border: 2px solid #f1cd96;
+  border-radius: 5px;
+  background: #845331;
+  width: 30%;
 }
 
-.page-card .card .details .content-card .proj-card .projet p {
-  width: 30%;
-  height: 90%;
+.page-card .card .details .content-card .proj-card .projet .proj-descr {
+  width: 95%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: antiquewhite;
+  margin: 5px auto;
+  text-decoration: none;
+}
+
+.page-card .card .details .content-card .proj-card .projet .proj-descr h4 {
+  font-size: 20px;
+}
+
+.page-card .card .details .content-card .proj-card .projet .proj-descr img {
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+}
+
+.page-card .card .details .content-card .proj-card .projet .proj-descr p {
+  margin-top: 5px;
+  text-decoration: none;
 }
 
 .page-card .card .details .content-card .social-icons {
@@ -801,13 +838,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
+  height: auto;
 }
 
 .page-card .card .details .content-card .social-icons a {
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: #0D0C0B;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -51,7 +51,7 @@
       top: 0;
       left: 0;
       width: 90%;
-      height: 90%;
+      height: 100%;
       padding: 20px;
       display: flex;
       justify-content: center;
@@ -72,17 +72,43 @@
           .descri-card{
             margin-top: 20px;           
             width: 100%;
-            height: 50%;
+            height: 25%;
+            overflow: hidden;
           }
           .proj-card{
+            margin-top: 5px;
             width: 100%;            
-            height: 30%;
-            .projet{
-              display:inline-flex;
-             width: 100%;
-              p{                
-                width: 30%;
-                height: 90%;
+            height: 55%;
+            display: flex;
+            justify-content: space-around;
+            .projet{            
+              border:2px solid $cream;
+              border-radius: 5px;              
+              background:$lightBrown;              
+             width: 30%;
+             .proj-descr{
+              width: 95%;
+              height: 95%;
+              display: flex;
+              align-items: center;
+              
+              flex-direction: column;
+              color: antiquewhite;
+              margin: 5px auto;
+              text-decoration: none;
+              h4{
+                font-size: 20px;
+              }
+              img{
+                margin-top: 5px;
+                width: 80px;
+                height: 80px;
+
+              }
+              p{
+                margin-top: 5px;
+                text-decoration: none;
+              }
               }
             }
           }
@@ -90,11 +116,11 @@
             position: relative;
             display: flex;
             margin-top: 10px;
+            height: auto;
             a{
               display: inline-block;
-              width: 35px;
-              height: 35px;
-              background-color: $black;
+              
+              
               display: flex;
               justify-content: center;
               align-items: center;
