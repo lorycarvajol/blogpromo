@@ -1,65 +1,47 @@
-.page-article{
+.page-article {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    margin: 30px auto;
+    color: $cream;
+  }
+  .article-search {
+    margin: 10px auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    
-    h1{
-       margin: 30px auto;
-        color: $cream;
+    margin-top: 20px;
+
+    width: 90%;
+    height: 100px;
+    form {
+      padding: 5px 5px;
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      border: 2px solid yellow;
+      background: rgb(170, 170, 170);
+      width: 30%;
+      height: 60px;
+      border-radius: 5px;
+
+      input {
+        border-radius: 5px;
+        width: 100%;
+        background-color: transparent;
+        font-size: 25px;
+        color: $brown;
+      }
+      .search-submit {
+        position: relative;
+        background-image: url(../assets/loupe.png);
+        width: 60px;
+        height: 60px;
+      }
     }
-    .article-search{
-        margin: 10px auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 20px;
-        
-        width: 90%;
-        height: 100px;
-        form{
-            padding: 5px 5px;
-            display: flex;
-            flex-direction: row;
-            margin: 0 auto;
-            border: 2px solid yellow;
-                    background: rgb(170, 170, 170);
-                    width: 30%;
-                    height: 60px;
-                    border-radius: 5px;
-                
-                input{
-                    border-radius: 5px;
-                   width: 100%;
-                   background-color: transparent;
-                   font-size: 25px;
-                   color: $brown;
-            }
-            .search-submit{
-                position: relative;
-                background-image: url(../assets/loupe.png);
-                width: 60px;
-                height: 60px;
-            }
-            
-            
-        }
-    }
-}
-.misha_loadmore{
-	background-color: #ddd;
-	border-radius: 2px;
-	display: block;
-	text-align: center;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: 800;
-	letter-spacing:1px;
-	cursor:pointer;
-	text-transform: uppercase;
-	padding: 10px 0;
-	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;  
-}
-.misha_loadmore:hover{
-	background-color: #767676;
-	color: #fff;
+  }
+  
 }
