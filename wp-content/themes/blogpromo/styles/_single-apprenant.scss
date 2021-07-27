@@ -8,8 +8,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  .card{
-   
+  .card{   
     position: relative;
     width: 30vw;
     height: 40vw;
@@ -27,14 +26,12 @@
       transform-origin: left;
       transform-style: preserve-3d;
       background: #000;
-      border-radius: 10px;
-      
+      border-radius: 10px;      
       transition: 1s;
       box-shadow: 10px 20px 40px rgba(247, 246, 246, 0.25);
       filter: grayscale(70%);
       img{
-        filter: grayscale(70%);
-        
+        filter: grayscale(70%);        
         border-radius: 10px;
         position: absolute;
         top: 0;
@@ -45,18 +42,16 @@
         backface-visibility: hidden;
       }
       img:nth-child(2){
-        transform:rotateY(180deg) ;
-        
+        transform:rotateY(180deg) ;       
         border-radius: 10px;
       }
     }
-    .details{
-      
+    .details{      
       position: absolute;
       top: 0;
       left: 0;
       width: 90%;
-      height: 90%;
+      height: 100%;
       padding: 20px;
       display: flex;
       justify-content: center;
@@ -66,8 +61,7 @@
           height: 100%;
           display: flex;
           justify-content:flex-start;
-          align-items: center;
-          background: rgba(153, 152, 152, 0.199);
+          align-items: center;        
           flex-direction: column;
           h2{
             color: $cream;
@@ -76,22 +70,45 @@
             line-height: 1em;
           }
           .descri-card{
-            margin-top: 20px;
-            background: rgb(161, 161, 161);
+            margin-top: 20px;           
             width: 100%;
-            height: 50%;
+            height: 25%;
+            overflow: hidden;
           }
           .proj-card{
-            width: 100%;
-            background: rgba(179, 175, 175, 0.212);
-            height: 30%;
-            .projet{
-              display:inline-flex;
-             width: 100%;
+            margin-top: 5px;
+            width: 100%;            
+            height: 55%;
+            display: flex;
+            justify-content: space-around;
+            .projet{            
+              border:2px solid $cream;
+              border-radius: 5px;              
+              background:$lightBrown;              
+             width: 30%;
+             .proj-descr{
+              width: 95%;
+              height: 95%;
+              display: flex;
+              align-items: center;
+              
+              flex-direction: column;
+              color: antiquewhite;
+              margin: 5px auto;
+              text-decoration: none;
+              h4{
+                font-size: 20px;
+              }
+              img{
+                margin-top: 5px;
+                width: 80px;
+                height: 80px;
+
+              }
               p{
-                background: rgb(228, 76, 76);
-                width: 30%;
-                height: 90%;
+                margin-top: 5px;
+                text-decoration: none;
+              }
               }
             }
           }
@@ -99,30 +116,26 @@
             position: relative;
             display: flex;
             margin-top: 10px;
+            height: auto;
             a{
               display: inline-block;
-              width: 35px;
-              height: 35px;
-              background-color: $black;
+              
+              
               display: flex;
               justify-content: center;
               align-items: center;
               text-decoration:none ;
               margin: 5px;
               transition: 0.2s;
-            }
-            
+            }            
           }
         }
       }
-    }
-  
-  }
-  
+    }  
+  } 
   .card:hover .imgbox{
     transform: rotateY(-180deg);
   }
- 
  .card:hover{
    transform: translateX(50%);
  }

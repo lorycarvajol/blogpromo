@@ -2,13 +2,16 @@
 
 <div class="present-container">
     <h1 class="title-present">Nos présentations</h1>
+    <?= get_search_form(); ?>
     <div class="bloc-present">
         <div class="present-item">
             <div class="present-content">
             <h2>hfgfjfjf</h2>
             <p>gfjgfhgdhgdghjgfjfhgfghfhgdhghghgfhgfjhgfjhfjhfjhv</p>
             <a href="">
-                <div class="presentBtn"></div>
+                <div class="presentBtn">
+                <img src="<?php echo get_template_directory_uri(); ?>./assets/Arrow.png" width="20px" height="30px" alt="" />
+                </div>
             </a>
         </div>
         </div>

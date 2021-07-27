@@ -120,6 +120,65 @@ body {
   background-color: #0D0C0B;
 }
 
+.singpost-container {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.singpost-container H1 {
+  text-align: center;
+  color: beige;
+}
+
+.singpost-container .post__meta {
+  margin: 15px auto;
+  width: 90%;
+  height: auto;
+  color: #f1cd96;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.singpost-container .post__meta .blocdesc {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.singpost-container .post__meta .blocdesc ul {
+  margin-left: 5px;
+  list-style: none;
+}
+
+.singpost-container .blocPost {
+  margin: 10px auto;
+  width: 70%;
+  height: 100%;
+  background: #8d8d8d;
+  border: 2px solid yellow;
+  position: relative;
+  padding: 10px;
+}
+
+.singpost-container p {
+  margin: 15px 25px 15px 15px;
+  float: left;
+}
+
+.singpost-container .post__content {
+  margin: 15px 15px 15px 25px;
+}
+
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,6 +257,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 800px;
+  border-top: 1px solid #c5c5c5;
+  border-left: 1px solid #c5c5c5;
 }
 
 .section-articles .container-articles .article > img {
@@ -580,11 +641,25 @@ body {
 }
 
 .bloc-present .present-item .present-content a .presentBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #818080;
   width: 25%;
   height: 55px;
   position: absolute;
   border: 3px solid #e4ba00;
+}
+
+.bloc-present .present-item .present-content a .presentBtn img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .bloc-present .present-item::after {
@@ -693,7 +768,7 @@ body {
   top: 0;
   left: 0;
   width: 90%;
-  height: 90%;
+  height: 100%;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,7 +793,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(153, 152, 152, 0.199);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -734,28 +808,60 @@ body {
 
 .page-card .card .details .content-card .descri-card {
   margin-top: 20px;
-  background: #a1a1a1;
   width: 100%;
-  height: 50%;
+  height: 25%;
+  overflow: hidden;
 }
 
 .page-card .card .details .content-card .proj-card {
+  margin-top: 5px;
   width: 100%;
-  background: rgba(179, 175, 175, 0.212);
-  height: 30%;
+  height: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .page-card .card .details .content-card .proj-card .projet {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
+  border: 2px solid #f1cd96;
+  border-radius: 5px;
+  background: #845331;
+  width: 30%;
 }
 
-.page-card .card .details .content-card .proj-card .projet p {
-  background: #e44c4c;
-  width: 30%;
-  height: 90%;
+.page-card .card .details .content-card .proj-card .projet .proj-descr {
+  width: 95%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: antiquewhite;
+  margin: 5px auto;
+  text-decoration: none;
+}
+
+.page-card .card .details .content-card .proj-card .projet .proj-descr h4 {
+  font-size: 20px;
+}
+
+.page-card .card .details .content-card .proj-card .projet .proj-descr img {
+  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+}
+
+.page-card .card .details .content-card .proj-card .projet .proj-descr p {
+  margin-top: 5px;
+  text-decoration: none;
 }
 
 .page-card .card .details .content-card .social-icons {
@@ -764,13 +870,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
+  height: auto;
 }
 
 .page-card .card .details .content-card .social-icons a {
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  background-color: #0D0C0B;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -10,6 +10,7 @@
             <input type="search" class="search-field" placeholder="Rechercher un article..." value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>" />
         </form>
     </div>
+
     <section class="section-articles">
         <h2>Les derniers articles</h2>
         <div class="container-articles">

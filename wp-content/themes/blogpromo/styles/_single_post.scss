@@ -1,0 +1,47 @@
+.singpost-container{
+    
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    
+    H1{
+        text-align: center;
+        color: beige;
+    }
+    .post__meta{
+        margin: 15px auto;
+        width: 90%;
+        height: auto;
+       color: $cream;
+        display: flex;
+        justify-content: space-around;
+        .blocdesc{
+            display:inline-flex;
+           
+            ul{
+                margin-left: 5px;
+                 list-style:  none;
+            }
+        }
+    }
+    .blocPost{
+        margin: 10px auto;
+        width: 70%;
+        height: 100%;
+        background: rgb(141, 141, 141);
+        border:2px solid yellow;
+        position: relative;
+        padding: 10px;
+
+    }
+    
+        p{
+            margin: 15px 25px 15px 15px;
+          float: left;
+        }
+        .post__content{
+            margin: 15px 15px 15px 25px;
+        }
+}
