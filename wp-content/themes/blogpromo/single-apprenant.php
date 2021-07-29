@@ -9,10 +9,8 @@
             <div class="content-card">
                 <h2>dfdsfdsfsdf</h2>
                 <div class="descri-card">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum quis cumque suscipit magni praesentium nobis corporis pariatur nam recusandae hic aut, voluptas aliquam reiciendis officiis inventore iure mollitia et?
-                        Blanditiis libero commodi sunt. Porro voluptatem veritatis voluptatum eos soluta accusamus, quia, eum magni labore quo repellendus earum quaerat officiis voluptas libero ad? Ipsum autem labore corporis quidem natus obcaecati?
-                        Neque unde modi explicabo doloribus labore totam nam, saepe officiis nihil molestiae fugit reiciendis aperiam provident vitae vel asperiores magnam assumenda. Architecto tenetur doloribus modi aliquam molestiae dolor id enim!
+                    <p><?php the_content(); ?>
+                        
                     </p>
                 </div>
                 <div class="proj-card">

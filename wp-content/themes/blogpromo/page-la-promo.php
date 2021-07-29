@@ -5,34 +5,54 @@
             <div class="container">
                 <div class="carousel">
                     <?php
+                    $i = 1;
                     $args = array(
                         'post_type' => 'apprenant',
+                        'posts_per_page' => 10
                     );
                     $wp_query = new WP_Query($args);
                     while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-                        <input type="radio" name="slides" checked="checked" id="slide-<?php $id;
-                                                                                        $id++; ?>">
-                        <ul class="carousel__slides">
+                        <input type="radio" name="slides" checked="checked" id="slide-<?= $i++;
+                                                                                        $i ?>">
+                    <?php endwhile; ?>
+                    <ul class="carousel__slides">
+                        <?php
+                        $args = array(
+                            'post_type' => 'apprenant',
+                            'posts_per_page' => 10
+                        );
+                        $wp_query = new WP_Query($args);
+                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                             <li class="carousel__slide">
                                 <figure>
                                     <div>
-                                        <img src="" alt="">
+                                        <?php the_post_thumbnail('medium'); ?>
                                     </div>
                                     <figcaption>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <h3><?php the_title(); ?></h3>
+                                        <?php the_content(); ?>
                                         <span class="credit">Photo: Tim Marshall</span>
                                     </figcaption>
-                                    <h3><?php the_title(); ?></h3>
                                 </figure>
                             </li>
-                        </ul>
-                        <ul class="carousel__thumbnails">
+                        <?php endwhile; ?>
+                    </ul>
+                    <ul class="carousel__thumbnails">
+                        <?php
+                        $i = 1;
+                        $args = array(
+                            'post_type' => 'apprenant',
+                            'posts_per_page' => 10
+                        );
+                        $wp_query = new WP_Query($args);
+                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                             <li>
-                                <label for="slide-1"><?php the_post_thumbnail(); ?></label>
+                                <label for="slide-<?= $i++;
+                                                    $i ?>"><?php the_post_thumbnail(); ?></label>
                             </li>
-                        </ul>
-                    <?php endwhile; ?>
+                        <?php endwhile; ?>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
