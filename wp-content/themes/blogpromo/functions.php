@@ -233,5 +233,12 @@ add_filter('allowed_block_types', function ($block_types, $post) {
   }
   return $block_types;
 }, 10, 2);
-
+// add_action('wp_insert_post', 'wpc_champs_personnalises_defaut');
+// function wpc_champs_personnalises_defaut($post_id) {
+// 	if ( $_GET['post_type'] != 'page' ) {
+// 		add_post_meta($post_id, 'image', '', true);
+// 		add_post_meta($post_id, 'custom_field_2', '', true);
+// 	}
+// 	return true;
+// }
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
