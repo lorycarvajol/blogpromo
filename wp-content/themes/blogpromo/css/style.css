@@ -408,13 +408,10 @@ body {
   width: 20px;
 }
 
-<<<<<<< HEAD
 .article > .desc-btn:hover {
   background: #000;
 }
 
-=======
->>>>>>> 22c9d87b895d7ba08cadbca1d9e7f2b7d90fa249
 .techno-container {
   margin-top: 100px;
   width: 100%;
@@ -598,19 +595,21 @@ body {
 
 .bloc-present {
   margin: 40px auto;
-  width: 90%;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .bloc-present .present-item {
+  width: 350px;
   margin-top: 20px;
   position: relative;
-  width: 30%;
   height: 200px;
   background: #523524;
   -webkit-box-shadow: 0 5px 10px 10px rgba(104, 53, 12, 0.342) inset;
@@ -618,27 +617,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   z-index: 1;
 }
 
 .bloc-present .present-item .present-content {
-  margin: 0 auto;
-  position: absolute;
-  width: 100%;
+  width: 400px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -648,76 +637,27 @@ body {
           flex-direction: column;
 }
 
-.bloc-present .present-item .present-content h2 {
-  height: 20%;
-  color: #f1cd96;
+.bloc-present .present-item .present-content h3 {
+  font-size: 30px;
+  color: white;
 }
 
 .bloc-present .present-item .present-content p {
-  width: 300px;
-  height: 60%;
+  margin-top: 20px;
+  text-align: center;
   color: #f1cd96;
 }
 
-.bloc-present .present-item .present-content a {
-  height: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 0;
+.wp-block-file {
+  margin-top: 50px;
 }
 
-.bloc-present .present-item .present-content a .presentBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.wp-block-file a:first-child {
+  display: none;
+}
+
+.wp-block-file a:nth-child(2) {
   background: #6e6e6e;
-  width: 20%;
-  height: 35px;
-  position: absolute;
-  border: 3px solid #e4ba00ab;
-  -webkit-box-shadow: 0 2px 5px 5px rgba(128, 128, 128, 0.767) inset;
-          box-shadow: 0 2px 5px 5px rgba(128, 128, 128, 0.767) inset;
-}
-
-.bloc-present .present-item .present-content a .presentBtn img {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.bloc-present .present-item::after {
-  content: '';
-  width: 60px;
-  height: 60px;
-  background: transparent;
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  border-top: 3px solid #e4ba00;
-  border-left: 3px solid #e4ba00;
-  z-index: 0;
-}
-
-.bloc-present .present-item::before {
-  content: '';
-  width: 60px;
-  height: 60px;
-  background: transparent;
-  position: absolute;
-  bottom: -3px;
-  right: -3px;
-  border-bottom: 3px solid #e4ba00;
-  border-right: 3px solid #e4ba00;
-  z-index: 0;
 }
 
 .page-card {
