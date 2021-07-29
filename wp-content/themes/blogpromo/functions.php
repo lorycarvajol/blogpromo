@@ -16,18 +16,6 @@ if (function_exists('add_theme_support')) {
   add_theme_support('post-thumbnails');
 }
 
-// Script et styles
-function capitaine_assets()
-{
-  // Charger notre script
-  wp_enqueue_script('capitaine', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0', true);
-
-  // Envoyer une variable de PHP à JS proprement
-  wp_localize_script('capitaine', 'ajaxurl', admin_url('admin-ajax.php'));
-}
-add_action('wp_enqueue_scripts', 'capitaine_assets');
-
-
 function enregistre_mon_menu()
 {
   register_nav_menu('menu_principal', __('Menu principal'));
@@ -110,6 +98,7 @@ function ajaxloadmoreblogdemo($atts, $content = null)
       'post_type' => 'post',
       'initial_posts' => '4',
       'loadmore_posts' => '2',
+      'category_post' => '',
     ),
     $atts,
   );
@@ -117,6 +106,7 @@ function ajaxloadmoreblogdemo($atts, $content = null)
   $additonalArr['appendBtn'] = true;
   $additonalArr["offset"] = 0; ?>
   <div class="dcsAllPostsWrapper">
+    <input type="hidden" name="category_post" value="<?= $atts['category_post'] ?>">
     <input type="hidden" name="initialPost" value="<?= $atts['initial_posts'] ?>">
     <input type="hidden" name="dcsPostType" value="<?= $atts['post_type'] ?>">
     <input type="hidden" name="offset" value="0">
@@ -163,7 +153,7 @@ function dcsGetPostsFtn($atts, $additonalArr = array())
   wp_reset_postdata();
   if ($havePosts && $additonalArr['appendBtn']) { ?>
     <div class="btnLoadmoreWrapper">
-      <a href="javascript:void(0);" class="btn btn-primary dcsLoadMorePostsbtn">Load More</a>
+      <a href="javascript:void(0);" class="btn btn-primary dcsLoadMorePostsbtn">Charger plus d'articles</a>
     </div>
 
     <!-- loader for ajax -->
@@ -183,7 +173,7 @@ function dcsGetPostsFtn($atts, $additonalArr = array())
 
 function dcsEnqueue_scripts()
 {
-  wp_enqueue_script('dcsLoadMorePostsScript', get_template_directory_uri() . '/js/loadmoreposts.js', array('jquery'), '20131205', true);
+  wp_enqueue_script('dcsLoadMorePostsScript', get_template_directory_uri() . '/js/loadmore.js', array('jquery'), '20131205', true);
   wp_localize_script(
     'dcsLoadMorePostsScript',
     'dcs_frontend_ajax_object',
@@ -207,3 +197,14 @@ function dcsAjaxLoadMorePostsAjaxReq()
   dcsGetPostsFtn($atts, $additonalArr);
   die();
 }
+
+add_filter('allowed_block_types', function ($block_types, $post) {
+  $allowed = [
+    'core/paragraph',
+    'core/file',
+  ];
+  if ($post->post_type == 'presentation') {
+    return $allowed;
+  }
+  return $block_types;
+}, 10, 2);
