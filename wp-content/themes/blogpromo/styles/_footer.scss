@@ -1,3 +1,9 @@
-footer p {
-color: aliceblue;
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(36, 36, 36, 0.027);
+    p {
+        color: aliceblue;
+    }
 }

@@ -7,7 +7,7 @@
         <div class="present-item">
             <div class="present-content">
             <h2>hfgfjfjf</h2>
-            <p>gfjgfhgdhgdghjgfjfhgfghfhgdhghghgfhgfjhgfjhfjhfjhv</p>
+            <p>gfjgfhgdhgdg hjgfjfhgfghfhg dhghghgfhgfj hgfjhfjhfjhv</p>
             <a href="">
                 <div class="presentBtn">
                 <img src="<?php echo get_template_directory_uri(); ?>./assets/Arrow.png" width="20px" height="30px" alt="" />

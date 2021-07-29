@@ -128,6 +128,19 @@ header .menu li a:hover:after {
   transition: all 1s;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: rgba(36, 36, 36, 0.027);
+}
+
 footer p {
   color: aliceblue;
 }
@@ -155,6 +168,7 @@ body {
 }
 
 .singpost-container H1 {
+  font-size: 35px;
   text-align: center;
   color: beige;
 }
@@ -188,7 +202,6 @@ body {
   height: 100%;
   background: #8d8d8d;
   border: 2px solid yellow;
-  position: relative;
   padding: 10px;
 }
 
@@ -220,9 +233,9 @@ body {
 
 .banner h1 {
   margin-top: -300px;
-  color: #523524;
   font-size: 89px;
-  text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.75);
+  color: #845331;
+  text-shadow: 2px 2px 3px rgba(197, 194, 194, 0.459);
 }
 
 .section-articles {
@@ -284,6 +297,9 @@ body {
   width: 800px;
   border-top: 1px solid #c5c5c5;
   border-left: 1px solid #c5c5c5;
+  -webkit-box-shadow: 2px 2px 5px gray inset;
+          box-shadow: 2px 2px 5px gray inset;
+  border-radius: 5px;
 }
 
 .section-articles .container-articles .article > img {
@@ -328,6 +344,8 @@ body {
   background-color: #523524;
   border: solid #845331;
   border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .review {
@@ -336,14 +354,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  overflow: hidden;
-}
-
-.review button {
-=======
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -356,7 +366,6 @@ body {
 .review #before,
 .review #after {
   cursor: pointer;
->>>>>>> 0d9e42d51846eca05f8ecab226e9bfb5ea937738
   font-size: 35px;
   background-color: transparent;
   border: none;
@@ -374,9 +383,6 @@ body {
           align-items: center;
 }
 
-<<<<<<< HEAD
-.review .reviewdiv .image {
-=======
 .review .sliderDiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,7 +398,6 @@ body {
 }
 
 .review .sliderDiv .image {
->>>>>>> 0d9e42d51846eca05f8ecab226e9bfb5ea937738
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,9 +407,6 @@ body {
           flex-direction: row;
 }
 
-<<<<<<< HEAD
-.review .reviewdiv .image img {
-=======
 #slider {
   position: relative;
   width: 1200px;
@@ -418,14 +420,11 @@ body {
 }
 
 .img {
->>>>>>> 0d9e42d51846eca05f8ecab226e9bfb5ea937738
   width: 20px;
 }
 
-.review :nth-child(3n+3) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.article > .desc-btn:hover {
+  background: #000;
 }
 
 .techno-container {
@@ -461,7 +460,7 @@ body {
       grid-template-columns: repeat(2, 1fr);
   width: 90%;
   height: auto;
-  gap: 15px;
+  gap: 25px;
 }
 
 .techno-container .bloc-front .item-bloc-front {
@@ -626,6 +625,8 @@ body {
   width: 30%;
   height: 200px;
   background: #523524;
+  -webkit-box-shadow: 0 5px 10px 10px rgba(104, 53, 12, 0.342) inset;
+          box-shadow: 0 5px 10px 10px rgba(104, 53, 12, 0.342) inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,6 +648,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -663,12 +667,12 @@ body {
 
 .bloc-present .present-item .present-content p {
   width: 300px;
-  height: 50%;
+  height: 60%;
   color: #f1cd96;
 }
 
 .bloc-present .present-item .present-content a {
-  height: 30%;
+  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,11 +692,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #818080;
-  width: 25%;
-  height: 55px;
+  background: #6e6e6e;
+  width: 20%;
+  height: 35px;
   position: absolute;
-  border: 3px solid #e4ba00;
+  border: 3px solid #e4ba00ab;
+  -webkit-box-shadow: 0 2px 5px 5px rgba(128, 128, 128, 0.767) inset;
+          box-shadow: 0 2px 5px 5px rgba(128, 128, 128, 0.767) inset;
 }
 
 .bloc-present .present-item .present-content a .presentBtn img {

@@ -32,7 +32,8 @@
           
             width:30%;
             height: 200px;
-            background: #523524;
+            background: $brown;
+            box-shadow: 0 5px 10px 10px rgba(104, 53, 12, 0.342) inset;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -44,7 +45,7 @@
                 width: 100%;
                 height: 100%;
                 display: flex;
-                               
+                 justify-content: end;              
                 align-items: center;
                 flex-direction: column;
                 h2{
@@ -53,12 +54,12 @@
                 }  
                 p{
                     width: 300px;
-                    height: 50%;
+                    height: 60%;
                     color: #f1cd96;
                 
                 }
                 a{
-                    height: 30%;
+                    height: 20%;
                     display: flex;
                     justify-content: center;
                     margin-bottom: 0;
@@ -66,11 +67,12 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;                      
-                        background: rgb(129, 128, 128);
-                        width: 25%;
-                        height: 55px;
+                        background: rgb(110, 110, 110);
+                        width: 20%;
+                        height: 35px;
                         position: absolute;
-                        border: 3px solid #e4ba00;
+                        border: 3px solid #e4ba00ab;
+                        box-shadow:0 2px 5px 5px rgba(128, 128, 128, 0.767) inset;
                         img{
                             transform: rotate(90deg);
                         }
