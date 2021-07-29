@@ -98,7 +98,7 @@ function ajaxloadmoreblogdemo($atts, $content = null)
       'post_type' => 'post',
       'initial_posts' => '4',
       'loadmore_posts' => '2',
-      'category_post' => '',
+      'category_post' => ''
     ),
     $atts,
   );
@@ -124,7 +124,8 @@ function dcsGetPostsFtn($atts, $additonalArr = array())
   $args = array(
     'post_type' => $atts['post_type'],
     'posts_per_page' => $atts['initial_posts'],
-    'offset' => $additonalArr["offset"]
+    'offset' => $additonalArr["offset"],
+    'category_post' => $atts['category_post']
   );
   $the_query = new WP_Query($args);
   $havePosts = true;
