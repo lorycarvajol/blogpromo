@@ -5,7 +5,15 @@
     </section>
     <section class="section-articles">
         <div class="container-articles">
-            <?php while (have_posts()) : the_post(); ?>
+            <?php
+            $args = array(
+                'post_type' => 'post',
+                'orderby' => 'date',
+                'order' => 'DESC',
+                'posts_per_page' => '3'
+            );
+            $wp_query = new WP_Query($args);
+            while ($wp_query->have_posts()) : the_post() ?>
                 <article class="accueil-articles">
                     <div class="article">
                         <?php the_post_thumbnail('medium'); ?>

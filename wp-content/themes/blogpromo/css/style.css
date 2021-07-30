@@ -67,6 +67,45 @@
   height: 60px;
 }
 
+.cat {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.cat li {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cat li ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cat li ul a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #845331;
+}
+
+.cat li ul a:visited {
+  color: #845331;
+}
+
 header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -872,21 +911,24 @@ body {
           transform: translateX(50%);
 }
 
-.promo {
+.container-promo {
+  margin: 0 auto;
+  width: 80%;
+  overflow: hidden;
+}
+
+.container-promo .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 700%;
+}
+
+.container-promo .slide .present-item {
+  background: red;
   width: 100%;
-  height: auto;
-  background-image: url(../assets/classe.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-section {
-  padding: 50px 0;
-}
-
-.promo-container {
-  width: 90%;
-  height: 500px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

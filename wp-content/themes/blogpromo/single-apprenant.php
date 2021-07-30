@@ -9,9 +9,7 @@
             <div class="content-card">
                 <h2>dfdsfdsfsdf</h2>
                 <div class="descri-card">
-                    <p><?php the_content(); ?>
-                        
-                    </p>
+                    <p><?php the_content(); ?></p>
                 </div>
                 <div class="proj-card">
                     <a class="projet" href="<?php the_permalink(); ?>">
@@ -19,7 +17,6 @@
                             <h4><?php the_title(); ?></h4>
                             <img src="<?php echo get_template_directory_uri(); ?>./assets/Arrow.png" width="20px" height="30px"  />
                             <p>sdfgfg<br>hfdegfsdyfd</p>
-                          
                         </div>                       
                     </a>
                     <a class="projet" href="<?php the_permalink(); ?>">
@@ -27,7 +24,6 @@
                             <h4><?php the_title(); ?></h4>
                             <img src="<?php echo get_template_directory_uri(); ?>./assets/Arrow.png" width="20px" height="30px"  />
                             <p>sdfgfg<br>hfdegfsdyfd</p>
-                          
                         </div>                       
                     </a>
                     <a class="projet" href="<?php the_permalink(); ?>">
@@ -35,7 +31,6 @@
                             <h4><?php the_title(); ?></h4>
                             <img src="<?php echo get_template_directory_uri(); ?>./assets/Arrow.png" width="20px" height="30px"  />
                             <p>sdfgfg<br>hfdegfsdyfd</p>
-                          
                         </div>                       
                     </a>
                 </div>
