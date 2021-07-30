@@ -1,30 +1,46 @@
 .singpost-container{
-    
-    width: 90%;
     height: auto;
-    margin: 20px auto;
     display: flex;
-    justify-content: center;
+    background-image: url(../assets/spirale.png);
+    background-size:cover;
+    background-attachment: fixed;
     
-    H1{
-        font-size: 35px;
-        text-align: center;
-        color: beige;
-    }
-    .post__meta{
-        margin: 15px auto;
-        width: 90%;
-        height: auto;
-       color: $cream;
+    .post{
         display: flex;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        .title-post{
+            font-size: 35px;
+            text-align: center;
+            color: beige;
+            position: relative;
+        }
+        .title-post::before {
+            text-align: center;
+            content: "";
+            position: absolute;
+            left: 45%;
+            bottom: 0px;
+            width: 260px;
+            height: 18px;
+            transform: skew(-12deg) translateX(-50%);
+            background: rgba(238, 131, 109, 0.5);
+            z-index: -1;
+        } 
+        .post__meta{
+            margin: 15px auto;
+            width: 90%;
+            height: 100%;
+            color: $cream;
+            display: flex;
+            justify-content: space-around;
         .blocdesc{
-            display:inline-flex;
-           
+            display:inline-flex;          
             ul{
                 margin-left: 5px;
                  list-style:  none;
-            }
+            }    
         }
     }
     .blocPost{
@@ -32,12 +48,8 @@
         width: 70%;
         height: 100%;
         background: rgb(141, 141, 141);
-        border:2px solid yellow;
-        
-        padding: 10px;
-
-    }
-    
+        border:2px solid yellow;       
+        padding: 10px;  
         p{
             margin: 15px 25px 15px 15px;
           float: left;
@@ -45,4 +57,13 @@
         .post__content{
             margin: 15px 15px 15px 25px;
         }
+    }
+}
+
+.single-post-footer{
+    padding: 5px ;
+    height: 10px;
+    margin-top: 150px;
+    
+}
 }

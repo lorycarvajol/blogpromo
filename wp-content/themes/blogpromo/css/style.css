@@ -11,6 +11,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url(../assets/spirale.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .page-article h1 {
@@ -156,6 +159,7 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: rgba(36, 36, 36, 0.027);
+  height: 40px;
 }
 
 footer p {
@@ -173,27 +177,56 @@ body {
 }
 
 .singpost-container {
-  width: 90%;
   height: auto;
-  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url(../assets/spirale.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.singpost-container .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.singpost-container H1 {
+.singpost-container .post .title-post {
   font-size: 35px;
   text-align: center;
   color: beige;
+  position: relative;
 }
 
-.singpost-container .post__meta {
+.singpost-container .post .title-post::before {
+  text-align: center;
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: 0px;
+  width: 260px;
+  height: 18px;
+  -webkit-transform: skew(-12deg) translateX(-50%);
+          transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 131, 109, 0.5);
+  z-index: -1;
+}
+
+.singpost-container .post .post__meta {
   margin: 15px auto;
   width: 90%;
-  height: auto;
+  height: 100%;
   color: #f1cd96;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,18 +235,18 @@ body {
       justify-content: space-around;
 }
 
-.singpost-container .post__meta .blocdesc {
+.singpost-container .post .post__meta .blocdesc {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.singpost-container .post__meta .blocdesc ul {
+.singpost-container .post .post__meta .blocdesc ul {
   margin-left: 5px;
   list-style: none;
 }
 
-.singpost-container .blocPost {
+.singpost-container .post .blocPost {
   margin: 10px auto;
   width: 70%;
   height: 100%;
@@ -222,13 +255,19 @@ body {
   padding: 10px;
 }
 
-.singpost-container p {
+.singpost-container .post .blocPost p {
   margin: 15px 25px 15px 15px;
   float: left;
 }
 
-.singpost-container .post__content {
+.singpost-container .post .blocPost .post__content {
   margin: 15px 15px 15px 25px;
+}
+
+.singpost-container .single-post-footer {
+  padding: 5px;
+  height: 10px;
+  margin-top: 150px;
 }
 
 .banner {
@@ -612,6 +651,10 @@ body {
   width: 100%;
   height: 800px;
   color: honeydew;
+  height: auto;
+  background-image: url(../assets/spirale2.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .present-container .title-present {

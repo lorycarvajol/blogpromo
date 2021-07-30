@@ -3,7 +3,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  background-image: url(../assets/spirale.png);
+  background-size:cover;
+  background-attachment: fixed;
+  
+  
   h1 {
     margin: 30px auto;
     color: $cream;
