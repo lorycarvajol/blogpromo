@@ -13,7 +13,7 @@ jQuery(document).ready(function () {
         } else if (i == 1) {
             newOffset = offset + dcsloadMorePosts;
         }
-        
+
         jQuery('.btnLoadmoreWrapper').hide();
         jQuery.ajax({
             type: "POST",

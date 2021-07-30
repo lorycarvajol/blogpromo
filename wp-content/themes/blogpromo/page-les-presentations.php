@@ -11,7 +11,9 @@
         $wp_query = new WP_Query($args);
         while ($wp_query->have_posts()) : the_post() ?>
             <div class="present-item">
-                <div class="present-content">
+                <div class="present-content buttonBox" id="first">
+                    <div class="border"></div>
+                    <div class="border"></div>
                     <h3><?php the_title(); ?></h3>
                     <?php the_content(); ?>
                     <a href="">

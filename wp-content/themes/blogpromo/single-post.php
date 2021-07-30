@@ -21,7 +21,7 @@
                     <div class="post__content">
                         <?php the_content(); ?>
                     </div>
-                    <?php the_meta(); ?> 
+                    <?php the_meta(); ?>
                 </div>
                
                 

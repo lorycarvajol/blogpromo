@@ -160,7 +160,6 @@
 <script>
     const next = document.getElementById('after')
     const previous = document.getElementById('before')
-
     var slide = Array.from(document.getElementsByClassName('reviewdiv'));
     var numero = 0;
 

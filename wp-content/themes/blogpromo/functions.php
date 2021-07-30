@@ -42,7 +42,7 @@ function register_student_post_types()
     'show_in_rest' => true,
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
-    'taxonomies' => array('category', 'post_tag'),
+    'taxonomies' => array('post_tag'),
     'menu_position' => 5,
     'menu_icon' => 'dashicons-admin-users',
   );
@@ -71,7 +71,7 @@ function register_presentation_post_types()
     'show_in_rest' => true,
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail'),
-    'taxonomies' => array('category', 'post_tag'),
+    'taxonomies' => array('post_tag'),
     'menu_position' => 5,
     'menu_icon' => 'dashicons-admin-page',
   );
@@ -160,6 +160,7 @@ function dcsGetPostsFtn($atts, $additonalArr = array())
             <div class="description">
               <h2><?php the_title(); ?></h2>
               <p><?php the_excerpt(); ?></p>
+              <?php the_meta() ?>
             </div>
 
             <div class="desc-btn">
@@ -195,7 +196,6 @@ function dcsGetPostsFtn($atts, $additonalArr = array())
 }
 
 
-
 function dcsEnqueue_scripts()
 {
   wp_enqueue_script('dcsLoadMorePostsScript', get_template_directory_uri() . '/js/loadmore.js', array('jquery'), '20131205', true);
@@ -211,6 +211,8 @@ add_action('wp_enqueue_scripts', 'dcsEnqueue_scripts');
 
 add_action("wp_ajax_dcsAjaxLoadMorePostsAjaxReq", "dcsAjaxLoadMorePostsAjaxReq");
 add_action("wp_ajax_nopriv_dcsAjaxLoadMorePostsAjaxReq", "dcsAjaxLoadMorePostsAjaxReq");
+
+
 function dcsAjaxLoadMorePostsAjaxReq()
 {
   extract($_POST);
@@ -223,22 +225,4 @@ function dcsAjaxLoadMorePostsAjaxReq()
   die();
 }
 
-add_filter('allowed_block_types', function ($block_types, $post) {
-  $allowed = [
-    'core/paragraph',
-    'core/file',
-  ];
-  if ($post->post_type == 'presentation') {
-    return $allowed;
-  }
-  return $block_types;
-}, 10, 2);
-// add_action('wp_insert_post', 'wpc_champs_personnalises_defaut');
-// function wpc_champs_personnalises_defaut($post_id) {
-// 	if ( $_GET['post_type'] != 'page' ) {
-// 		add_post_meta($post_id, 'image', '', true);
-// 		add_post_meta($post_id, 'custom_field_2', '', true);
-// 	}
-// 	return true;
-// }
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
