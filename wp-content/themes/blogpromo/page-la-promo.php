@@ -1,12 +1,4 @@
-<?php get_header(); ?>
-<div class="promo">
-    <section>
-        <div class="promo-container">
-<?php
 
-?>
-        </div>
-    </section>
-</div>
 
+<?php wp_head(); ?>
 <?php get_footer(); ?>
