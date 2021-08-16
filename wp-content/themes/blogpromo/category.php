@@ -14,6 +14,6 @@
             <?php echo do_shortcode('[ajaxloadmoreblogdemo post_type="post" initial_posts="9" loadmore_posts="4" category_id="' . $category . '"]') ?>
         </div>
     </section>
-    <?php var_dump($categories); ?>
+    
 </div>
 <?php get_footer(); ?>
