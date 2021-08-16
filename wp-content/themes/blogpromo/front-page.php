@@ -21,7 +21,7 @@
                             <h2><?php the_title(); ?></h2>
                             <?php the_excerpt(); ?>
                         </div>
-                        <div class="desc-btn">
+                        <div class="pulse">
                             <a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>./assets/Arrow.png" width="20px" height="30px" alt="" /></a>
                         </div>
                     </div>

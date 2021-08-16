@@ -18,60 +18,14 @@ Author URI: https://wordpress.org/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url(../assets/spirale.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .page-article h1 {
   margin: 30px auto;
   color: #f1cd96;
-}
-
-.page-article .article-search {
-  margin: 10px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
-  width: 90%;
-  height: 100px;
-}
-
-.page-article .article-search form {
-  padding: 5px 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 0 auto;
-  border: 2px solid yellow;
-  background: #aaaaaa;
-  width: 30%;
-  height: 60px;
-  border-radius: 5px;
-}
-
-.page-article .article-search form input {
-  border-radius: 5px;
-  width: 100%;
-  background-color: transparent;
-  font-size: 25px;
-  color: #523524;
-}
-
-.page-article .article-search form .search-submit {
-  position: relative;
-  background-image: url(../assets/loupe.png);
-  width: 60px;
-  height: 60px;
 }
 
 .cat {
@@ -163,6 +117,7 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: rgba(36, 36, 36, 0.027);
+  height: 40px;
 }
 
 footer p {
@@ -180,27 +135,56 @@ body {
 }
 
 .singpost-container {
-  width: 90%;
   height: auto;
-  margin: 20px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-image: url(../assets/spirale.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.singpost-container .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.singpost-container H1 {
+.singpost-container .post .title-post {
   font-size: 35px;
   text-align: center;
   color: beige;
+  position: relative;
 }
 
-.singpost-container .post__meta {
+.singpost-container .post .title-post::before {
+  text-align: center;
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: 0px;
+  width: 260px;
+  height: 18px;
+  -webkit-transform: skew(-12deg) translateX(-50%);
+          transform: skew(-12deg) translateX(-50%);
+  background: rgba(238, 131, 109, 0.5);
+  z-index: -1;
+}
+
+.singpost-container .post .post__meta {
   margin: 15px auto;
   width: 90%;
-  height: auto;
+  height: 100%;
   color: #f1cd96;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,18 +193,18 @@ body {
       justify-content: space-around;
 }
 
-.singpost-container .post__meta .blocdesc {
+.singpost-container .post .post__meta .blocdesc {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.singpost-container .post__meta .blocdesc ul {
+.singpost-container .post .post__meta .blocdesc ul {
   margin-left: 5px;
   list-style: none;
 }
 
-.singpost-container .blocPost {
+.singpost-container .post .blocPost {
   margin: 10px auto;
   width: 70%;
   height: 100%;
@@ -229,13 +213,19 @@ body {
   padding: 10px;
 }
 
-.singpost-container p {
+.singpost-container .post .blocPost p {
   margin: 15px 25px 15px 15px;
   float: left;
 }
 
-.singpost-container .post__content {
+.singpost-container .post .blocPost .post__content {
   margin: 15px 15px 15px 25px;
+}
+
+.singpost-container .single-post-footer {
+  padding: 5px;
+  height: 10px;
+  margin-top: 150px;
 }
 
 .banner {
@@ -351,16 +341,18 @@ body {
   text-align: center;
 }
 
-.section-articles .container-articles .article .desc-btn {
+.section-articles .container-articles .article .pulse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 5%;
+  height: 60px;
 }
 
-.section-articles .container-articles .article .desc-btn a {
+.section-articles .container-articles .article .pulse a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,6 +369,33 @@ body {
   border-right: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 0.3s;
+          animation: pulse 0.3s;
+  -webkit-box-shadow: 0 0 0 4em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 4em rgba(255, 255, 255, 0);
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #f5a58b;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
 }
 
 .review {
@@ -454,10 +473,6 @@ body {
   width: 20px;
 }
 
-.article > .desc-btn:hover {
-  background: #000;
-}
-
 .techno-container {
   margin-top: 100px;
   width: 100%;
@@ -491,7 +506,7 @@ body {
       grid-template-columns: repeat(2, 1fr);
   width: 90%;
   height: auto;
-  gap: 25px;
+  gap: 50px;
 }
 
 .techno-container .bloc-front .item-bloc-front {
@@ -525,7 +540,7 @@ body {
       grid-template-columns: repeat(2, 1fr);
   width: 90%;
   height: auto;
-  gap: 15px;
+  gap: 50px;
 }
 
 .techno-container .bloc-back .item-bloc-back {
@@ -558,7 +573,7 @@ body {
       grid-template-columns: repeat(2, 1fr);
   width: 90%;
   height: auto;
-  gap: 15px;
+  gap: 50px;
 }
 
 .techno-container .bloc-pao .item-bloc-pao {
@@ -619,6 +634,10 @@ body {
   width: 100%;
   height: 800px;
   color: honeydew;
+  height: auto;
+  background-image: url(../assets/spirale2.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .present-container .title-present {
