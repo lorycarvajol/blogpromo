@@ -89,7 +89,7 @@ add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 
 
-add_shortcode('ajaxloadmoreblogdemo', 'ajaxloadmoreblogdemo');
+add_shortcode('ajaxloadmore', 'ajaxloadmore');
 function ajaxloadmoreblogdemo($atts, $content = null)
 {
   ob_start();
@@ -111,6 +111,8 @@ function ajaxloadmoreblogdemo($atts, $content = null)
     <input type="hidden" name="offset" value="0">
     <input type="hidden" name="dcsloadMorePosts" value="<?= $atts['loadmore_posts'] ?>">
     <div class="dcsDemoWrapper container-articles">
+      <div class="border"></div>
+      <div class="border"></div>
       <?php dcsGetPostsFtn($atts, $additonalArr); ?>
     </div>
   </div>
@@ -125,7 +127,7 @@ function dcsGetPostsFtn($atts, $additonalArr = array())
     'posts_per_page' => $atts['initial_posts'],
     'offset' => $additonalArr["offset"],
   );
-  if (!empty($atts['category_id']) && $atts['category_id']!= 3 ) {
+  if (!empty($atts['category_id']) && $atts['category_id'] != 3) {
     $args = 'cat= ' . $atts['category_id'] . '';
     $the_query = new WP_Query($args);
     while ($the_query->have_posts()) {

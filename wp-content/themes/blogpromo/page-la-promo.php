@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<button id="previous">
+    < </button>
         <div class="container-promo">
             <div class="slide" id="slide">
                 <?php
@@ -21,8 +23,7 @@
                 wp_reset_query(); ?>
             </div>
         </div>
-        <button id="next">
-            > </button>
+        <button id="next"> > </button>
         <?php get_footer(); ?>
 
         <script>
@@ -43,5 +44,19 @@
                     slide.style.marginLeft = '0px';
                     i = 1
                 }
+                console.log(i)
             })
+            
+            previous.addEventListener('click', function() {
+                let width = document.getElementsByClassName('apprenant')[0].clientWidth;
+                if (i < apprenant) {
+                    i--
+                    slide.style.marginLeft = '-' + i + '00%';
+                } else if (i = apprenant - 1) {
+                    slide.style.marginLeft = '0px';
+                    i = 1
+                }
+                console.log(i)
+            })
+            
         </script>
