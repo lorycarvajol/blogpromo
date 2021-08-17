@@ -11,6 +11,9 @@ header {
         font-size: $fontSizeNav;
         position: relative;
         margin-right: 30px;
+        @media (max-width: 945px) {
+          font-size: 20px;
+        }
       }
       a:after {
         position: absolute;

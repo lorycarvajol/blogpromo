@@ -22,7 +22,7 @@
                             <?php the_excerpt(); ?>
                         </div>
                         <div class="pulse">
-                            <a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>./assets/Arrow.png" width="20px" height="30px" alt="" /></a>
+                            <a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/Arrow.png" width="20px" height="30px" alt="" /></a>
                         </div>
                     </div>
                 </article>
@@ -49,101 +49,101 @@
                                     switch (get_fields()['note']) {
                                         case 0:
                                     ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 0.5:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/half_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/half_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 1:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 1.5:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/half_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/half_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 2:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 2.5:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/half_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/half_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 3:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 3.5:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/half_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/half_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 4:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/empty_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/empty_star.png" alt="" />
                                         <?php
                                             break;
                                         case 4.5:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/half_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/half_star.png" alt="" />
                                         <?php
                                             break;
                                         case 5:
                                         ?>
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
-                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>./assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
+                                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/full_star.png" alt="" />
                                     <?php
                                             break;
                                     }

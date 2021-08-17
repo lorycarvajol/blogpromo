@@ -90,7 +90,7 @@ add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 
 add_shortcode('ajaxloadmore', 'ajaxloadmore');
-function ajaxloadmoreblogdemo($atts, $content = null)
+function ajaxloadmore($atts, $content = null)
 {
   ob_start();
   $atts = shortcode_atts(

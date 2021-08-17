@@ -11,7 +11,7 @@
 
         <h2>Les derniers articles</h2>
         <div class="container-articles">
-            <?php echo do_shortcode('[ajaxloadmoreblogdemo post_type="post" initial_posts="9" loadmore_posts="4" category_id="' . $category . '"]') ?>
+            <?php echo do_shortcode('[ajaxloadmore post_type="post" initial_posts="9" loadmore_posts="4" category_id="' . $category . '"]') ?>
         </div>
     </section>
 </div>

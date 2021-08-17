@@ -16,8 +16,6 @@
                     <div class="border"></div>
                     <h3><?php the_title(); ?></h3>
                     <?php the_content(); ?>
-                    <a href="">
-                    </a>
                 </div>
             </div>
         <?php endwhile;
